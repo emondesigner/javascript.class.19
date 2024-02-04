@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+
+    <!-- CSS LINK START -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS LINK END -->
+</head>
+<body>
+
+    <!-- MODE CHANGE SECTION START -->
+    <section id="modeChange">
+        <button class="btn">Light</button>
+    </section>
+    <!-- MODE CHANGE SECTION END -->
+    
+    <!-- ANALOG CLOCK START -->
+    <section id="analogClock">
+        <div class="container">
+            
+            <div class="clock">
+                <h1>ANALOG CLOCK</h1>
+                <span style="--i:1"><b>1</b></span>
+                <span style="--i:2"><b>2</b></span>
+                <span style="--i:3"><b>3</b></span>
+                <span style="--i:4"><b>4</b></span>
+                <span style="--i:5"><b>5</b></span>
+                <span style="--i:6"><b>6</b></span>
+                <span style="--i:7"><b>7</b></span>
+                <span style="--i:8"><b>8</b></span>
+                <span style="--i:9"><b>9</b></span>
+                <span style="--i:10"><b>10</b></span>
+                <span style="--i:11"><b>11</b></span>
+                <span style="--i:12"><b>12</b></span>
+
+                <div class="hand" id="hour" style="--color:red; --hight:80px"><i></i></div>
+                <div class="hand" id="min" style="--color:rgb(15, 175, 0); --hight:105px"><i></i></div>
+                <div class="hand" id="sec" style="--color:rgb(145, 142, 142); --hight:125px"><i></i></div>
+            </div>
+            
+        </div> 
+    </section>
+    <!-- ANALOG CLOCK END -->
+
+
+    <!-- DIGITAL CLOCK START -->
+    <section id="digitalClock">
+        <div class="container">
+            <h2>DIGITAL CLOCK</h2>
+            <div class="digital-clock">
+                <h1 id="hour2" >00</h1>
+                <span>:</span>
+                <h1 id="min2" >00</h1>
+                <span>:</span>
+                <h1 id="sec2" >00</h1>
+                <span>:</span>
+                <h1  id="am">am</h1>
+            </div>
+        </div>
+        </section>
+    <!-- DIGITAL CLOCK END -->
+
+
+    <!-- STOP WATCH CLOCK START -->
+    <section id="stopWatch">
+        <div class="container">
+            <h2>STOP WATCH CLOCK</h2>
+            
+            <div class="clock">
+                <span>00 : 00 : 00</span>
+            </div>
+            <div class="button">
+                <button id="stopBtn" style="--color:rgba(161, 38, 38, 0.5);">Stop</button>
+                <button id="startBtn" style="--color:rgb(31, 167, 76, 0.5);">Start</button>
+                <button id="resetBtn" style="--color:rgb(56, 35, 153, 0.5);">Reset</button>
+            </div>
+        </div>
+    </section>
+    <!-- STOP WATCH CLOCK END -->
+ 
+    <!-- JAVASCRIPT LINK START  -->
+    <script src="index.js"></script>
+    <!-- JAVASCRIPT LINK END -->
+</body>
+</html>

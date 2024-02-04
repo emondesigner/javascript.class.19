@@ -1,0 +1,214 @@
+/* COMMON CSS START  */
+:root{
+    --bg-color:#f1f0f0;
+   --textColor:#030303;
+   --tittle-color:#fff;
+   --backgroundColor:#333131;
+   --hover:#8a6868;
+}
+:root.modeChange{
+    --bg-color:#000;
+    --textColor:#fff;
+    --tittle-color:#9b3333;
+   --backgroundColor:#0f0d0d;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* COMMON CSS END */
+
+/* MODE CHANGE SECTION START */
+#modeChange{
+    background-color:var(--backgroundColor);position: sticky;
+    top: 0;
+    left: 0;
+
+}
+#modeChange button {
+    padding: 10px;
+    border: 2px solid var(--tittle-color);
+    background: var(--bg-color);
+    cursor: pointer;
+    margin-left: 15px;
+    margin-top: 15px;
+    border-radius: 10%;
+}
+#modeChange .btn{
+    background-color: var(--bg-color);
+    color: var(--textColor);
+}
+/* MODE CHANGE SECTION END */
+
+
+
+/* ANALOG CLOCK START  */ 
+#analogClock{
+    background-color: var(--backgroundColor);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Single Day', cursive;
+}
+#analogClock .container{
+    position: relative;
+}
+#analogClock .clock h1{
+    position: absolute;
+    top:-60px;
+    color: var(--tittle-color);
+    text-align: center;
+    font-size: 40px;
+}
+#analogClock .clock{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color:var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--tittle-color);
+}
+#analogClock .clock span{
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 15px;
+    text-align: center;
+}
+ #analogClock .clock span b{
+    font-size: 30px;
+    font-weight: 800px;
+    transform: rotate(calc(-30deg * var(--i)));
+    display: block;
+    color:var(--textColor) ;
+}
+#analogClock .clock::before{
+    content: '';
+    position: absolute;
+    width: 10px ;
+    height: 10px;
+    background-color: var(--textColor);
+    border-radius: 50%;
+    z-index: 2;
+}
+#analogClock .clock .hand{
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+#analogClock .clock i{
+    width: 8px;
+    height: var(--hight);
+    background-color: var(--color);
+    position: absolute;
+    border-radius: 10px;
+}
+/* ANALOG CLOCK END
+
+
+/* DIGITAL CLOCK START */
+#digitalClock{
+    background-color:var(--backgroundColor);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#digitalClock h2{
+    font-size: 40px;
+    color: var(--tittle-color);
+    margin-bottom: 25px;
+}
+
+#digitalClock .digital-clock{
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 24px;
+    border-radius: 10px;
+    border: 2px solid var(--tittle-color);
+
+}
+#digitalClock .digital-clock h1{
+    font-size: 40px;
+    padding: 0 10px;
+    color:var(--textColor);
+}
+#digitalClock .digital-clock span{
+    font-size: 40px;
+    color: var(--textColor);
+}
+/* DIGITAL CLOCK END */
+
+/* STOP WATCH CLOCK START */
+#stopWatch{
+    background-color: var(--backgroundColor);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.container{
+    position: absolute;
+}
+#stopWatch h2{
+    
+    position: absolute;
+    top: -56px;
+    color: var(--tittle-color);
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+#stopWatch .clock{
+    background-color: var(--bg-color);
+    padding: 20px 25px;
+    border-radius: 10px;
+    border: 2px solid var(--tittle-color);
+
+}
+#stopWatch .clock span{
+    font-size: 40px;
+    padding: 0 10px;
+    color: var(--textColor);
+    font-weight: 800;
+}
+#stopWatch .button {
+    margin-top: 20px;
+}
+#stopWatch .button button {
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 20px;
+    border-radius: 10%;
+    border: 2px solid var(--tittle-color);
+    background-color:var(--color);
+    margin-inline: 10px;
+    font-family: 'Protest Riot', sans-serif;
+    cursor: pointer;
+
+}
+#stopWatch .button button:hover{
+    background-color:red;
+}
+#stopWatch .button button:hover:nth-child(2){
+    background-color:green;
+}
+#stopWatch .button button:hover:nth-child(3){
+    background-color:blue ;
+}
+/* STOP WATCH CLOCK END */
